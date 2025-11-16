@@ -6,7 +6,7 @@ int main()
 	int HR1 = 0; int HR2 = 0; int HR3 = 0; int HR4 = 0; int HR5 = 0;
 	cout << "Welcome to Meds & More Pharmacy, for all your pharmaceutical needs!" << endl;
 	cout << "You can stop this program at any time by entering a number above the maximum height [199]" << endl;
-	while (height < 199) // Beginning of Task 1, I'm using a 'while' loop structure to create an event-controlled loop
+	while (height <= 199) // Beginning of Task 1, I'm using a 'while' loop structure to create an event-controlled loop
 	{
 		cout << "Enter the customer's height: "; cin >> height;totalheights++; //Entering values to then be filtered into each loop variable on line 5.
 		if (height < shortest) shortest = height;
@@ -27,7 +27,7 @@ int main()
 			HR5++;
 		}
 	}
-	if (height > 199) { // creating an output display for the histogram using for loops
+	if (height >= 199) { // creating an output display for the histogram using for loops
 		cout << "      Histogram       " << endl;
 		cout << "Height Range   0-159: "; for (int i = 0; i < HR1; i++) cout << "+"; cout << endl;
 		cout << "Height Range 160-169: "; for (int i = 0; i < HR2; i++) cout << "+"; cout << endl;
